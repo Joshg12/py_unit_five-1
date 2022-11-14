@@ -18,3 +18,19 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+def count(first, last, step):
+    test = ""
+    for x in range(first, last, step):
+        test += str(x) + " "
+
+    print(test)
+
+
+def main():
+    print(count(0, 7, 1))
+    print (count(6, 0, -1))
+
+if __name__ == '__main__':
+    main()
