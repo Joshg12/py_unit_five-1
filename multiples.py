@@ -5,6 +5,5 @@ def get_sum(number):
             print("The number is a multiple.")
             total += x
             print(x)
-
-get_sum(100)
-print
+            print(total)
+get_sum(1000)
