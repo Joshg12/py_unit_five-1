@@ -8,3 +8,5 @@ for number in numbers:
 average = sum / count
 print("The list of numbers is:", numbers)
 print("The average of all the numbers is:", average)
+
+#dfgh
