@@ -5,4 +5,13 @@ def sequence(number):
     :param number: The starting number for the Hailstone sequence
     :return: The number of steps taken to reach 1
     """
-    pass  # delete this line when writing your function
+    while number % 2 ==0:
+        number= number * 3
+    while number % 2 ==1:
+        number = number / 3
+    print(number)
+def main():
+    number = int(input("Enter a number."))
+    sequence(number)
+if __name__ == '__main__':
+    main()
