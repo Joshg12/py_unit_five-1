@@ -5,7 +5,6 @@ import random
 
 def get_number():
     randomn = random.randint(1,100)
-    print (randomn)
     return randomn
 def get_guess():
     guess = int(input("Enter your guess"))
