@@ -4,7 +4,7 @@ input("What is your name?")
 import random
 
 def get_number():
-    randomn = random.randint(0,9)
+    randomn = random.randint(1,100)
     print (randomn)
     return randomn
 def get_guess():
@@ -12,7 +12,7 @@ def get_guess():
     return guess
 
 
-while True:
+for x in range(3):
     randomn = get_number()
     while True:
         guess = get_guess()
