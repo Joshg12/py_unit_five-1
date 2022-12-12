@@ -4,6 +4,9 @@ input("What is your name?") #Asks the user's name
 import random #Adds a randomizer
 
 def get_number():
+    '''
+    This function choses a random number.
+    '''
     randomn = random.randint(1,100) #Picks a number from 1-100
     return randomn
 def get_guess():
@@ -16,7 +19,7 @@ for x in range(3):
         guess = get_guess()
 
         if randomn == guess:
-            print("You guessed correctly!") #When the user guesses correctly
+            print("You guessed correctly! You have completed a round.") #When the user guesses correctly
             break
         else:
             print("You guessed incorrectly, try again.") #When the user guesses incorrectly
