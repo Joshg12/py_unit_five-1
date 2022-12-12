@@ -10,7 +10,6 @@ def get_guess():
     guess = int(input("Enter your guess")) #Gets the user's guess
     return guess
 
-
 for x in range(3):
     randomn = get_number()
     while True:
