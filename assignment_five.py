@@ -1,13 +1,13 @@
-print("Welcome to the guessing game?")
-input("What is your name?")
+print("Welcome to the guessing game?") #Welcomes the user
+input("What is your name?") #Asks the user's name
 
-import random
+import random #Adds a randomizer
 
 def get_number():
-    randomn = random.randint(1,100)
+    randomn = random.randint(1,100) #Picks a number from 1-100
     return randomn
 def get_guess():
-    guess = int(input("Enter your guess"))
+    guess = int(input("Enter your guess")) #Gets the user's guess
     return guess
 
 
@@ -17,9 +17,9 @@ for x in range(3):
         guess = get_guess()
 
         if randomn == guess:
-            print("You guessed correctly!")
+            print("You guessed correctly!") #When the user guesses correctly
             break
         else:
-            print("You guessed incorrectly, try again.")
-        if guess > randomn: print("The correct number is less than your guess.")
-        if guess < randomn: print("The correct number is greater than your guess.")
+            print("You guessed incorrectly, try again.") #When the user guesses incorrectly
+        if guess > randomn: print("The correct number is less than your guess.") #Helps the user guess
+        if guess < randomn: print("The correct number is greater than your guess.") #Helps the user guess
